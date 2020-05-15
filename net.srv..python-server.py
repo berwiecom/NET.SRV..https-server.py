@@ -1,5 +1,5 @@
 
-#### Script needed to enable SSL
+#### This script needed to enable SSL
 
 ### https://blog.anvileight.com/posts/simple-python-http-server/
 
@@ -15,7 +15,7 @@
 import BaseHTTPServer, SimpleHTTPServer
 import ssl
 
-httpd = BaseHTTPServer.HTTPServer(('localhost', 80), # 4443
+httpd = BaseHTTPServer.HTTPServer(('localhost', 4443), # 4443
         SimpleHTTPServer.SimpleHTTPRequestHandler)
 
 httpd.socket = ssl.wrap_socket (httpd.socket,
